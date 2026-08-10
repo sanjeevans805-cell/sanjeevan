@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sanjeevan — Cyber Security Student Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#fcf9f8",
+                      "tertiary-fixed-dim": "#b5c8e2",
+                      "on-background": "#1b1b1b",
+                      "accent-gold-soft": "#D4C3B0",
+                      "on-secondary-container": "#656460",
+                      "on-secondary-fixed": "#1c1c18",
+                      "on-secondary-fixed-variant": "#474743",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed": "#091d30",
+                      "tertiary-fixed": "#d1e4ff",
+                      "on-primary-fixed": "#2a1800",
+                      "on-surface": "#1b1b1b",
+                      "surface-dim": "#dcd9d9",
+                      "outline": "#80756b",
+                      "tertiary-container": "#62748b",
+                      "surface-variant": "#e5e2e1",
+                      "secondary-fixed": "#e5e2dc",
+                      "tertiary": "#4a5b71",
+                      "on-error": "#ffffff",
+                      "surface-glass": "rgba(255, 255, 255, 0.7)",
+                      "secondary-container": "#e5e2dc",
+                      "surface-tint": "#745a38",
+                      "surface-container-high": "#eae7e7",
+                      "on-tertiary-container": "#f8f9ff",
+                      "inverse-on-surface": "#f3f0ef",
+                      "secondary": "#5f5e5a",
+                      "primary-fixed-dim": "#e3c198",
+                      "on-primary-container": "#fff8f5",
+                      "outline-variant": "#d1c4b8",
+                      "primary-container": "#8a6e4b",
+                      "on-tertiary-fixed-variant": "#36485d",
+                      "border-subtle": "rgba(138, 110, 75, 0.15)",
+                      "inverse-surface": "#313030",
+                      "secondary-fixed-dim": "#c9c6c1",
+                      "surface-container": "#f0eded",
+                      "surface-container-low": "#f6f3f2",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#fcf9f8",
+                      "surface-container-highest": "#e5e2e1",
+                      "primary-fixed": "#ffddb6",
+                      "on-primary-fixed-variant": "#5a4223",
+                      "surface": "#fcf9f8",
+                      "inverse-primary": "#e3c198",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6",
+                      "primary": "#6f5635",
+                      "on-surface-variant": "#4e453c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1280px",
+                      "section-gap": "160px",
+                      "margin-desktop": "64px",
+                      "gutter": "32px",
+                      "margin-mobile": "24px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "EB Garamond"
+                      ],
+                      "display-lg": [
+                              "EB Garamond"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "EB Garamond"
+                      ],
+                      "display-lg-mobile": [
+                              "EB Garamond"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "84px",
+                              {
+                                      "lineHeight": "92px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "52px",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+          .glass-panel {
+              background: rgba(255, 255, 255, 0.7);
+              backdrop-filter: blur(20px);
+              -webkit-backdrop-filter: blur(20px);
+              border: 1px solid rgba(138, 110, 75, 0.15);
+              box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+          }
+          
+          .glass-card {
+              background: rgba(255, 255, 255, 0.7);
+              backdrop-filter: blur(20px);
+              -webkit-backdrop-filter: blur(20px);
+              border: 1px solid rgba(138, 110, 75, 0.15);
+              box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+              border-radius: 24px;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .glass-card:hover {
+              transform: translateY(-4px);
+              box-shadow: 0 30px 60px rgba(0,0,0,0.06);
+          }
+
+          .tech-chip {
+              background: var(--color-surface-container-low);
+              color: var(--color-primary);
+              border: 1px solid var(--color-border-subtle);
+              border-radius: 9999px;
+              padding: 4px 12px;
+              font-family: 'Inter', sans-serif;
+              font-size: 12px;
+              line-height: 16px;
+              letter-spacing: 0.1em;
+              font-weight: 600;
+              text-transform: uppercase;
+          }
+      </style>
+
+<style id="sanjeevan-glow-effects">
+/* Simple touch/hover glow for each box */
+.glass-card{
+  position:relative;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.glass-card:hover,
+.glass-card:focus-within{
+  transform:translateY(-4px);
+  border-color:rgba(0,229,255,.75) !important;
+  box-shadow:
+    0 0 8px rgba(0,229,255,.65),
+    0 0 22px rgba(0,229,255,.45),
+    0 0 45px rgba(0,229,255,.22) !important;
+}
+.glass-card:hover .tech-chip{
+  transition:.2s ease;
+}
+.tech-chip:hover{
+  border-color:#00e5ff !important;
+  box-shadow:0 0 12px rgba(0,229,255,.55);
+}
+@media (hover:none){
+  .glass-card:active{
+    transform:scale(.98);
+    border-color:rgba(0,229,255,.8) !important;
+    box-shadow:
+      0 0 10px rgba(0,229,255,.7),
+      0 0 30px rgba(0,229,255,.4) !important;
+  }
+}
+</style>
+
+</head>
+<body class="bg-[#F7F4EE] text-on-surface antialiased overflow-x-hidden selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-glass backdrop-blur-xl border-b border-subtle shadow-sm">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto hidden md:flex">
+<a class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight cursor-pointer active:scale-95 transition-transform" href="#">
+                Sanjeevan Portfolio
+            </a>
+<div class="flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-on-secondary-variant dark:text-secondary-fixed-dim hover:text-primary hover:opacity-80 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-primary dark:text-primary-fixed border-b border-primary pb-1 cursor-pointer active:scale-95 transition-transform" href="#">About</a>
+<a class="font-label-caps text-label-caps text-primary dark:text-primary-fixed border-b border-primary pb-1 cursor-pointer active:scale-95 transition-transform" href="#skills">Skills</a>
+<a class="font-label-caps text-label-caps text-on-secondary-variant dark:text-secondary-fixed-dim hover:text-primary hover:opacity-80 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#activities">Activities</a>
+<a class="font-label-caps text-label-caps text-on-secondary-variant dark:text-secondary-fixed-dim hover:text-primary hover:opacity-80 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Projects</a>
+<a class="font-label-caps text-label-caps text-on-secondary-variant dark:text-secondary-fixed-dim hover:text-primary hover:opacity-80 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#">Lab</a>
+<a class="font-label-caps text-label-caps text-on-secondary-variant dark:text-secondary-fixed-dim hover:text-primary hover:opacity-80 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary rounded-xl px-6 py-3 font-label-caps text-label-caps hover:opacity-80 transition-opacity duration-300 cursor-pointer active:scale-95 transition-transform">
+                Get in Touch
+            </button>
+</div>
+<!-- Mobile Nav Trigger (Simplified for this exercise) -->
+<div class="flex justify-between items-center h-20 px-margin-mobile md:hidden">
+<a class="font-headline-md text-headline-md text-primary tracking-tight" href="#">
+                Sanjeevan Portfolio
+            </a>
+<span class="material-symbols-outlined text-primary text-2xl">menu</span>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- About Section -->
+<section class="mb-section-gap pt-16" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Text Editorial -->
+<div class="lg:col-span-5 lg:col-start-1 z-10 relative">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-8 tracking-tight">
+                        Cyber Security Student & Future Security Engineer
+                    </h1>
+<p class="font-label-md text-label-md text-primary uppercase tracking-widest mb-8">SRM Valliammai Engineering College • 2nd Year • Cyber Security</p>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant max-w-prose">
+<p>
+                            I am Sanjeevan, a 2nd-year student at SRM Valliammai Engineering College, building my skills in cyber security, programming, networking, and secure technologies.
+                        </p>
+<p>
+                            As a student, I am focused on learning through projects, labs, CTFs, and hands-on practice. My goal is to grow into a skilled cyber security professional and build practical solutions that help protect digital systems.
+                        </p>
+</div>
+<div class="mt-12">
+<img alt="Sanjeevan - Cyber Security Student" class="w-full h-80 object-cover rounded-[24px] grayscale opacity-90 border border-subtle shadow-sm" data-alt="Sanjeevan, a 2nd year cyber security student, professional student portrait." src="https://i.pravatar.cc/700?img=12"/>
+</div>
+</div>
+<!-- Right: Stats Grid -->
+<div class="lg:col-span-6 lg:col-start-7 mt-16 lg:mt-0 relative">
+<!-- Decorative ambient blur behind cards -->
+<div class="absolute inset-0 bg-primary-container blur-[100px] opacity-5 rounded-full z-0"></div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+<!-- Stat Card 1 -->
+<div class="glass-card p-10 flex flex-col justify-between h-48">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl font-light" style="font-variation-settings: 'wght' 100;">folder_open</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Year</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-primary block leading-none">2nd</span>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="glass-card p-10 flex flex-col justify-between h-48 sm:mt-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl font-light" style="font-variation-settings: 'wght' 100;">emoji_events</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Focus</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-primary block leading-none">CSE</span>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="glass-card p-10 flex flex-col justify-between h-48">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl font-light" style="font-variation-settings: 'wght' 100;">flag</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">College</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-primary block leading-none">SRM</span>
+</div>
+</div>
+<!-- Stat Card 4 -->
+<div class="glass-card p-10 flex flex-col justify-between h-48 sm:mt-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl font-light" style="font-variation-settings: 'wght' 100;">code_blocks</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Portfolio</span>
+</div>
+<div>
+<span class="font-display-lg text-display-lg text-primary block leading-none">2026</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="w-full h-px bg-border-subtle my-section-gap relative">
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#F7F4EE] px-4">
+<span class="material-symbols-outlined text-outline font-light text-sm">architecture</span>
+</div>
+</div>
+<!-- Skills Section -->
+<section class="relative" id="skills">
+<div class="mb-16 md:mb-24 max-w-3xl">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-6">
+                    Expertise &amp; Toolset
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    A curated selection of the languages, frameworks, and methodologies employed in engineering secure, high-performance systems.
+                </p>
+</div>
+<!-- Bento Grid for Skills -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Category: Programming -->
+<div class="glass-card p-10 flex flex-col gap-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full border border-subtle flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-primary font-light text-2xl" style="font-variation-settings: 'wght' 100;">terminal</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Programming</h3>
+</div>
+<div class="flex flex-wrap gap-3 mt-auto">
+<span class="tech-chip">Python</span>
+<span class="tech-chip">C++</span>
+<span class="tech-chip">Java</span>
+<span class="tech-chip">Linux</span>
+</div>
+</div>
+<!-- Category: Web Development -->
+<div class="glass-card p-10 flex flex-col gap-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full border border-subtle flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-primary font-light text-2xl" style="font-variation-settings: 'wght' 100;">language</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Web Development</h3>
+</div>
+<div class="flex flex-wrap gap-3 mt-auto">
+<span class="tech-chip">HTML</span>
+<span class="tech-chip">CSS</span>
+<span class="tech-chip">JavaScript</span>
+<span class="tech-chip">Web Basics</span>
+</div>
+</div>
+<!-- Category: Cyber Security -->
+<div class="glass-card p-10 flex flex-col gap-6 lg:row-span-2">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full border border-subtle flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-primary font-light text-2xl" style="font-variation-settings: 'wght' 100;">security</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Cyber Security</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+                        Rigorous methodologies for identifying vulnerabilities and fortifying defenses across multiple vectors.
+                    </p>
+<div class="flex flex-wrap gap-3 mt-auto">
+<span class="tech-chip">Penetration Testing</span>
+<span class="tech-chip">Cryptography</span>
+<span class="tech-chip">Forensics</span>
+<span class="tech-chip">Threat Modeling</span>
+</div>
+</div>
+<!-- Category: Networking -->
+<div class="glass-card p-10 flex flex-col gap-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full border border-subtle flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-primary font-light text-2xl" style="font-variation-settings: 'wght' 100;">hub</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Networking</h3>
+</div>
+<div class="flex flex-wrap gap-3 mt-auto">
+<span class="tech-chip">TCP/IP</span>
+<span class="tech-chip">Routing</span>
+<span class="tech-chip">VPNs</span>
+<span class="tech-chip">Firewalls</span>
+</div>
+</div>
+<!-- Category: Cloud -->
+<div class="glass-card p-10 flex flex-col gap-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full border border-subtle flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-primary font-light text-2xl" style="font-variation-settings: 'wght' 100;">cloud</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Cloud Architecture</h3>
+</div>
+<div class="flex flex-wrap gap-3 mt-auto">
+<span class="tech-chip">AWS</span>
+<span class="tech-chip">Azure</span>
+<span class="tech-chip">Docker</span>
+<span class="tech-chip">Docker Basics</span>
+</div>
+</div>
+<!-- Category: Tools -->
+<div class="glass-card p-10 flex flex-col gap-6 lg:col-span-2">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full border border-subtle flex items-center justify-center bg-surface">
+<span class="material-symbols-outlined text-primary font-light text-2xl" style="font-variation-settings: 'wght' 100;">handyman</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Essential Tools</h3>
+</div>
+<div class="flex flex-wrap gap-3 mt-auto">
+<span class="tech-chip">Git</span>
+<span class="tech-chip">Wireshark</span>
+<span class="tech-chip">Burp Suite</span>
+<span class="tech-chip">Nmap</span>
+<span class="tech-chip">Metasploit</span>
+<span class="tech-chip">GitHub</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Activities Section -->
+<section class="relative mt-32" id="activities">
+  <div class="mb-16 md:mb-20 max-w-3xl">
+    <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">
+      Activities
+    </h2>
+    <p class="font-body-lg text-body-lg text-on-surface-variant">
+      My learning journey, technical activities, and involvement in cyber security.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="glass-card p-10">
+      <span class="material-symbols-outlined text-primary text-3xl mb-6">security</span>
+      <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Cyber Security Learning</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Exploring cyber security concepts, ethical hacking, network security, and defensive techniques.
+      </p>
+    </div>
+
+    <div class="glass-card p-10">
+      <span class="material-symbols-outlined text-primary text-3xl mb-6">terminal</span>
+      <h3 class="font-headline-md text-headline-md text-on-surface mb-4">Programming Practice</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Practicing Python, C, C++, Java, and problem-solving through hands-on coding.
+      </p>
+    </div>
+
+    <div class="glass-card p-10">
+      <span class="material-symbols-outlined text-primary text-3xl mb-6">groups</span>
+      <h3 class="font-headline-md text-headline-md text-on-surface mb-4">College Activities</h3>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Participating in technical activities, workshops, events, and collaborative learning at college.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="relative mt-32" id="contact">
+  <div class="glass-card p-10 md:p-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="font-label-caps text-label-caps text-primary tracking-widest">CONTACT</span>
+        <h2 class="font-headline-lg text-headline-lg text-on-surface mt-4 mb-6">
+          Let's Connect
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Interested in cyber security, technology, or collaboration? Feel free to connect with me.
+        </p>
+      </div>
+
+      <div class="space-y-5">
+        <a href="mailto:your-email@example.com" class="flex items-center gap-4 p-5 rounded-xl border border-subtle hover:border-[#00e5ff] transition-all">
+          <span class="material-symbols-outlined text-primary">mail</span>
+          <div>
+            <div class="font-label-caps text-label-caps text-on-surface-variant">Email</div>
+            <div class="font-body-md text-body-md text-on-surface">your-email@example.com</div>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-center gap-4 p-5 rounded-xl border border-subtle hover:border-[#00e5ff] transition-all">
+          <span class="material-symbols-outlined text-primary">code</span>
+          <div>
+            <div class="font-label-caps text-label-caps text-on-surface-variant">GitHub</div>
+            <div class="font-body-md text-body-md text-on-surface">GitHub Profile</div>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-center gap-4 p-5 rounded-xl border border-subtle hover:border-[#00e5ff] transition-all">
+          <span class="material-symbols-outlined text-primary">work</span>
+          <div>
+            <div class="font-label-caps text-label-caps text-on-surface-variant">LinkedIn</div>
+            <div class="font-body-md text-body-md text-on-surface">LinkedIn Profile</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-background dark:bg-background border-t border-subtle">
+<div class="flex flex-col md:flex-row justify-between items-center px-margin-desktop max-w-container-max mx-auto gap-gutter transition-all duration-300">
+<div class="font-label-caps text-label-caps text-on-surface">
+                Sanjeevan Portfolio
+            </div>
+<div class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim text-center md:text-left">
+                © 2026 Sanjeevan. Cyber Security Student Portfolio.
+            </div>
+<div class="flex gap-6 items-center">
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors duration-200" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors duration-200" href="#">GitHub</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors duration-200" href="#">Twitter</a>
+<a class="font-body-md text-body-md text-on-secondary-fixed-variant hover:text-primary transition-colors duration-200 ml-4" href="#">Back to Top</a>
+</div>
+</div>
+</footer>
+
+
+
+</body></html>
